@@ -1,0 +1,37 @@
+body {
+    font-family: Arial, sans-serif;
+    padding: 20px;
+    background-color: #141414;
+}
+
+.container {
+    position: relative;
+    max-width: 600px;
+    margin: 0 auto;
+    background: #141414;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+#text {
+    line-height: 1.6;
+    color:#ffffff;
+}
+
+.tooltip {
+    position: absolute;
+    background-color: #eeeeee;
+    color: #000000;
+    padding: 5px 10px;
+    border-radius: 4px;
+    opacity: 0;
+    visibility: hidden;
+    pointer-events: none;
+    transition: opacity 0.3s, visibility 0.3s;
+    white-space: pre-wrap; /* Ensure the tooltip text respects newlines */
+    max-width: 300px; /* Set a maximum width for the tooltip */
+    word-wrap: break-word; /* Wrap long words */
+    box-sizing: border-box;
+    z-index: 1000; /* Ensure tooltip is above other content */
+}
